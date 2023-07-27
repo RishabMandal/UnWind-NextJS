@@ -23,7 +23,11 @@ const page = () => {
       <div className="bg-gray-200 min-h-screen min-w-screen">
         <div className="flex flex-col md:flex-row">
           <div className="bg-white md:w-[35vw] text-xl p-5 rounded-xl m-5 mr-0">
-            <div className={`${silkscreen.className} text-center text-5xl py-5`}>Profile</div>
+            <div
+              className={`${silkscreen.className} text-center text-5xl py-5`}
+            >
+              Profile
+            </div>
             <div>
               <div className="font-semibold font-quicksand text-center mt-7">
                 Badges Earned
@@ -83,10 +87,10 @@ const page = () => {
                 <div className="font-semibold text-3xl my-3">
                   Recommended activities
                 </div>
-                <div className="flex">
+                <div className="flex justify-between">
                   <Link
                     href="/components/breathe"
-                    className="w-[150px] h-[150px] mr-3 cursor-pointer"
+                    className="w-[240px] h-[240px] mr-3 cursor-pointer"
                   >
                     <img
                       className="rounded-xl object-cover h-full"
@@ -96,7 +100,7 @@ const page = () => {
                   </Link>
                   <Link
                     href="/components/yoga"
-                    className="w-[150px] h-[150px] mr-3 cursor-pointer"
+                    className="w-[240px] h-[240px] mr-3 cursor-pointer"
                   >
                     <img
                       className="rounded-xl"
@@ -106,20 +110,20 @@ const page = () => {
                   </Link>
                   <Link
                     href="/components/morningexercises"
-                    className="w-[150px] h-[150px] mr-3 cursor-pointer"
+                    className="w-[240px] h-[240px] mr-3 cursor-pointer"
                   >
                     <img
-                      className="rounded-xl"
+                      className="rounded-xl w-[240px] h-[240px]"
                       src="https://static.vecteezy.com/system/resources/thumbnails/004/209/032/small/woman-with-earphones-listening-music-vector.jpg"
                       alt=""
                     />
                   </Link>
                   <Link
                     href="/components/games"
-                    className="w-[150px] h-[150px] cursor-pointer"
+                    className="w-[240px] h-[240px] cursor-pointer"
                   >
                     <img
-                      className="rounded-xl"
+                      className="rounded-xl w-[240px] h-[240px]"
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGvZsqMuiAgD5S6gNaYoTovI2pWz5MmZkKVA&usqp=CAU"
                       alt=""
                     />
@@ -130,24 +134,24 @@ const page = () => {
                 href="/components/therapist"
                 className="bg-white pt-1 pb-3 px-3 rounded-xl ml-3"
               >
-                <div className="font-semibold text-center text-3xl mt-3 mx-2">
+                <div className="font-semibold text-center text-3xl mt-3 mx-4">
                   Talk to an expert
                 </div>
                 <img
-                  className="w-[170px] h-[170px] cursor-pointer mx-auto"
+                  className="w-[240px] h-[240px] cursor-pointer mx-auto"
                   src="https://st3.depositphotos.com/12780408/17069/v/600/depositphotos_170693058-stock-illustration-chairman-of-the-board-cartoon.jpg"
                   alt=""
                 />
               </Link>
               <Link
                 href="/components/journal"
-                className="bg-white w-[240px] pt-1 pb-3 px-3 rounded-xl ml-3"
+                className="bg-white w-[300px] pt-1 pb-3 px-3 rounded-xl ml-3"
               >
                 <div className="font-semibold text-center text-3xl mt-3 mx-2">
                   Journal
                 </div>
                 <img
-                  className="object-contain mx-auto h-[170px] cursor-pointer"
+                  className="object-contain mx-auto mt-10 cursor-pointer"
                   src="https://st2.depositphotos.com/14746926/46389/v/450/depositphotos_463899526-stock-illustration-vector-illustration-note-book-headline.jpg"
                   alt=""
                 />
