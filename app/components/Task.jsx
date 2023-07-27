@@ -41,7 +41,7 @@ const Task = ({ currentCoins, setCurrentCoins }) => {
           type="text"
           value={inputText.charAt(0).toUpperCase() + inputText.slice(1)}
           className="outline-none"
-          placeholder="Enter Task To Add"
+          placeholder="Enter Task Here To Add"
           style={{ paddingRight: "740px" }}
         ></input>
         <button
@@ -56,7 +56,7 @@ const Task = ({ currentCoins, setCurrentCoins }) => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth={1.5}
+            strokeWidth={2.5}
             stroke="currentColor"
             className="w-6 h-6 stroke-[#06D6A0]"
           >
@@ -83,7 +83,7 @@ const Task = ({ currentCoins, setCurrentCoins }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={1.5}
+                strokeWidth={2.5}
                 stroke="currentColor"
                 className="w-6 h-6 stroke-[#06D6A0]"
               >

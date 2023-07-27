@@ -158,7 +158,7 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
       <div className="min-h-screen bg-[#F8FFE5] flex flex-col md:flex-row">
         <div className="w-screen p-5 md:p-20 min-h-screen md:w-[50vw] flex flex-col justify-center items-center">
           <div className={`${silkscreen.className} text-8xl mb-4`}>UNWIND</div>
-          <div className="text-7xl mb-8 font-semibold text-gray-900 font-Noto Serif">
+          <div className="text-7xl mb-8 text-center font-semibold text-gray-900 font-Noto Serif">
             Improving Mental Health
           </div>
           <button

@@ -21,7 +21,7 @@ const page = () => {
   return (
     <div>
       <div className="bg-gray-200 min-h-screen min-w-screen">
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row pb-5">
           <div className="bg-white md:w-[35vw] text-xl p-5 rounded-xl m-5 mr-0">
             <div
               className={`${silkscreen.className} text-center text-5xl py-5`}
