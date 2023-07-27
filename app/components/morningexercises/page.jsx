@@ -21,7 +21,7 @@ const MorningExercises = () => {
   };
   return (
     <div>
-      <div className="min-h-screen p-4">
+      <div className="min-h-screen p-4 bg-[#F8FFE5]">
         <div className="flex flex-wrap">
           <div className="w-[45vw] bg-purple-500 rounded-2xl m-2 min-h-[85vh] text-white p-3">
             <div className="text-3xl text-center font-semibold my-5 text-white">
