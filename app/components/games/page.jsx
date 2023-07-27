@@ -19,7 +19,6 @@ const Games = () => {
             </div>
             <div className="flex flex-col md:flex-row">
               <div
-                // to="/breathe"
                 className="border-4 w-full hover:bg-green-100 border-[#06D6A0] text-[#06D6A0] drop-shadow-xl p-3 rounded-xl m-5 font-semibold"
               >
                 <div className="text-center p-3 text-3xl font-semibold">
