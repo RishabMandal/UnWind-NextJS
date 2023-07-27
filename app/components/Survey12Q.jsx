@@ -104,10 +104,12 @@ const Caraousel = () => {
     </>
   ) : (
     <>
-      <div className="text-5xl text-center font-serif font-bold">
+      <div className="text-5xl min-h-[64vh] flex flex-col justify-center text-center font-bold">
         Thanks for your response
         <Link href="/components/profile">
-          <div>Proceed</div>
+          <div className="bg-green-600 w-fit text-white rounded-xl mx-auto p-5 m-5">
+            Proceed
+          </div>
         </Link>
       </div>
       {/* <div className="text-center text-xl font-semibold mb-10 mt-10">
