@@ -25,10 +25,10 @@ const Activities = () => {
             >
               Select Categories
             </div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-col md:flex-row">
               <Link
                 href="/components/breathe"
-                className="shadow-2xl  border-2 w-[44vw] hover:bg-purple-200 border-[#06D6A0] text-[#06D6A0] p-3 rounded-xl m-5 font-semibold"
+                className="shadow-2xl border-2 w-full hover:bg-green-200 border-[#06D6A0] text-[#06D6A0] p-3 rounded-xl m-5 font-semibold"
               >
                 <div className="text-center p-3 text-3xl font-semibold">
                   Deep Breathing
@@ -41,7 +41,7 @@ const Activities = () => {
               </Link>
               <Link
                 href="/components/yoga"
-                className="shadow-2xl  border-2 w-[44vw] hover:bg-purple-200 border-[#06D6A0] text-[#06D6A0] p-3 rounded-xl m-5 font-semibold"
+                className="shadow-2xl border-2 w-full hover:bg-green-200 border-[#06D6A0] text-[#06D6A0] p-3 rounded-xl m-5 font-semibold"
               >
                 <div className="text-center p-3 text-3xl font-semibold">
                   Explore Yoga
@@ -52,9 +52,11 @@ const Activities = () => {
                   alt=""
                 />
               </Link>
+            </div>
+            <div className="flex flex-col md:flex-row">
               <Link
                 href="/components/morningexercises"
-                className="shadow-2xl  border-2 w-[44vw] hover:bg-purple-200 border-[#06D6A0] text-[#06D6A0] p-3 rounded-xl m-5 font-semibold"
+                className="shadow-2xl border-2 w-full hover:bg-green-200 border-[#06D6A0] text-[#06D6A0] p-3 rounded-xl m-5 font-semibold"
               >
                 <div className="text-center p-3 text-3xl font-semibold">
                   Nature Sounds and Podcasts
@@ -68,7 +70,7 @@ const Activities = () => {
               </Link>
               <Link
                 href="/components/games"
-                className="shadow-2xl  border-2 w-[44vw] hover:bg-purple-200 border-[#06D6A0] text-[#06D6A0] p-3 rounded-xl m-5 font-semibold"
+                className="shadow-2xl  border-2 w-full hover:bg-green-200 border-[#06D6A0] text-[#06D6A0] p-3 rounded-xl m-5 font-semibold"
               >
                 <div className="text-center p-3 text-3xl font-semibold">
                   Relaxing Games
