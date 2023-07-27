@@ -2,13 +2,13 @@
 
 import React, { useState } from "react";
 import ReactAudioPlayer from "react-audio-player";
-import audio1 from "../../assets/musics/audio1.mp3";
-import audio2 from "../../assets/musics/audio2.mp3";
-import audio3 from "../../assets/musics/audio3.mp3";
-import audio4 from "../../assets/musics/audio4.mp3";
-import podcast1 from "../../assets/musics/podcast1.m4a";
-import podcast2 from "../../assets/musics/podcast2.m4a";
-import podcast3 from "../../assets/musics/podcast4.m4a";
+// import audio1 from "../../assets/musics/audio1.mp3";
+// import audio2 from "../../assets/musics/audio2.mp3";
+// import audio3 from "../../assets/musics/audio3.mp3";
+// import audio4 from "../../assets/musics/audio4.mp3";
+// import podcast1 from "../../assets/musics/podcast1.m4a";
+// import podcast2 from "../../assets/musics/podcast2.m4a";
+// import podcast3 from "../../assets/musics/podcast4.m4a";
 
 const MorningExercises = () => {
   const [music, setMusic] = useState("audio1");
@@ -45,7 +45,7 @@ const MorningExercises = () => {
               <div id="audio4" className="text-center cursor-pointer font-semibold" onClick={handleClick}>
                 Audio 4
               </div>
-              <ReactAudioPlayer
+              {/* <ReactAudioPlayer
                 className="mx-auto mt-[20px]"
                 src={
                   music === "audio1"
@@ -57,7 +57,7 @@ const MorningExercises = () => {
                     : audio4
                 }
                 controls
-              />
+              /> */}
             </div>
           </div>
           <div className="w-[45vw] bg-purple-500 rounded-2xl m-2 min-h-[85vh] text-white p-3">
@@ -79,7 +79,7 @@ const MorningExercises = () => {
               <div id="podcast3" className="text-center mb-10 cursor-pointer font-semibold" onClick={handlePod}>
                 Podcast 3
               </div>
-              <ReactAudioPlayer
+              {/* <ReactAudioPlayer
                 className="mx-auto mt-[20px]"
                 src={
                   podcast === "podcast1"
@@ -89,7 +89,7 @@ const MorningExercises = () => {
                     : podcast3
                 }
                 controls
-              />
+              /> */}
             </div>
           </div>
         </div>
