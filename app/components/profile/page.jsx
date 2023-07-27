@@ -23,7 +23,7 @@ const page = () => {
       <div className="bg-gray-200 min-h-screen min-w-screen">
         <div className="flex flex-col md:flex-row">
           <div className="bg-white md:w-[35vw] text-xl p-5 rounded-xl m-5 mr-0">
-            <div className={`${silkscreen.className} text-center text-5xl`}>Profile page</div>
+            <div className={`${silkscreen.className} text-center text-5xl py-5`}>Profile</div>
             <div>
               <div className="font-semibold font-quicksand text-center mt-7">
                 Badges Earned
