@@ -11,7 +11,7 @@ const Header = ({ setLoginView }) => {
   return (
     <div className="z-20 sticky top-0 bg-[#fff4e1]">
       <div className="flex justify-between px-4 py-6">
-        <Link className="font-bold font-serif" href="/">
+        <Link className="font-bold" href="/">
           <Image
             src={logoimage}
             className="h-[25px] my-auto object-contain w-fit transition ease-in hover:scale-110"
@@ -55,17 +55,18 @@ const Header = ({ setLoginView }) => {
           <Link
             href="/components/contact"
             className="mx-2 hover:text-[#06D6A0] text-2xl duration-200 font-semibold"
-          >
+            >
             Contact Us
           </Link>
-          <button
-            onClick={() => {
-              window.location.reload();
-            }}
-            className="mx-2 text-white text-2xl duration-200 font-semibold py-1 px-3 rounded-lg bg-[#06D6A0] hover:bg-green-500 duration-200"
+          <Link
+            href="/"
+            // onClick={() => {
+            //   window.location.reload();
+            // }}
+            className="mx-2 text-white text-2xl font-semibold py-1 px-3 rounded-lg bg-[#06D6A0] hover:bg-green-500 duration-200"
           >
             Logout
-          </button>
+          </Link>
         </div>
       </div>
     </div>

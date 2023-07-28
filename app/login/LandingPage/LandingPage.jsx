@@ -163,7 +163,7 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
           </div>
           <button
             onClick={() => setLoginPage(true)}
-            className="text-white bg-[#06D6A0] text-xl hover:bg-gray-700 transition ease-in rounded-full py-3 px-9 font-semibold"
+            className="text-white bg-[#06D6A0] text-2xl hover:bg-gray-700 transition ease-in rounded-full py-3 px-9 font-semibold"
           >
             Get started
           </button>
