@@ -9,6 +9,12 @@ import ReactAudioPlayer from "react-audio-player";
 // import podcast1 from "../../assets/musics/podcast1.m4a";
 // import podcast2 from "../../assets/musics/podcast2.m4a";
 // import podcast3 from "../../assets/musics/podcast4.m4a";
+import { Silkscreen } from "next/font/google";
+
+const silkscreen = Silkscreen({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const MorningExercises = () => {
   const [music, setMusic] = useState("audio1");
@@ -22,9 +28,10 @@ const MorningExercises = () => {
   return (
     <div>
       <div className="min-h-screen p-4 bg-[#F8FFE5]">
-        <div className="flex flex-wrap">
-          <div className="w-[45vw] bg-purple-500 rounded-2xl m-2 min-h-[85vh] text-white p-3">
-            <div className="text-3xl text-center font-semibold my-5 text-white">
+        <div className={`${silkscreen.className} text-6xl text-[#06D6A0] pb-4 text-center`}>Morning Exercise</div>
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full bg-[#06D6A0] rounded-2xl m-2 pb-10 text-white p-3">
+            <div className="text-5xl text-center font-semibold my-5 text-white">
               Nature Sounds
             </div>
             <img
@@ -33,16 +40,16 @@ const MorningExercises = () => {
               alt=""
             />
             <div className="mt-5">
-              <div id="audio1" className="text-center cursor-pointer font-semibold" onClick={handleClick}>
+              <div id="audio1" className="text-center text-2xl mb-1 cursor-pointer font-semibold" onClick={handleClick}>
                 Audio 1
               </div>
-              <div id="audio2" className="text-center cursor-pointer font-semibold" onClick={handleClick}>
+              <div id="audio2" className="text-center text-2xl mb-1 cursor-pointer font-semibold" onClick={handleClick}>
                 Audio 2
               </div>
-              <div id="audio3" className="text-center cursor-pointer font-semibold" onClick={handleClick}>
+              <div id="audio3" className="text-center text-2xl mb-1 cursor-pointer font-semibold" onClick={handleClick}>
                 Audio 3
               </div>
-              <div id="audio4" className="text-center cursor-pointer font-semibold" onClick={handleClick}>
+              <div id="audio4" className="text-center text-2xl mb-1 cursor-pointer font-semibold" onClick={handleClick}>
                 Audio 4
               </div>
               {/* <ReactAudioPlayer
@@ -60,8 +67,8 @@ const MorningExercises = () => {
               /> */}
             </div>
           </div>
-          <div className="w-[45vw] bg-purple-500 rounded-2xl m-2 min-h-[85vh] text-white p-3">
-            <div className="text-3xl text-center font-semibold my-5 text-white">
+          <div className="w-full bg-[#06D6A0] rounded-2xl m-2 pb-10 text-white p-3">
+            <div className="text-5xl text-center font-semibold my-5 text-white">
               Podcasts
             </div>
             <img
@@ -70,13 +77,13 @@ const MorningExercises = () => {
               alt=""
             />
             <div className="mt-5">
-              <div id="podcast1" className="text-center cursor-pointer font-semibold" onClick={handlePod}>
+              <div id="podcast1" className="text-center text-2xl mb-1 cursor-pointer font-semibold" onClick={handlePod}>
                 Podcast 1
               </div>
-              <div id="podcast2" className="text-center cursor-pointer font-semibold" onClick={handlePod}>
+              <div id="podcast2" className="text-center text-2xl mb-1 cursor-pointer font-semibold" onClick={handlePod}>
                 Podcast 2
               </div>
-              <div id="podcast3" className="text-center mb-10 cursor-pointer font-semibold" onClick={handlePod}>
+              <div id="podcast3" className="text-center text-2xl mb-10 cursor-pointer font-semibold" onClick={handlePod}>
                 Podcast 3
               </div>
               {/* <ReactAudioPlayer
