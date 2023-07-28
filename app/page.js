@@ -4,6 +4,7 @@
 import { useState } from "react";
 import LandingPage from "./login/LandingPage/LandingPage";
 import HomePage from "./components/HomePage";
+import Footer from "./Footer";
 
 export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -12,7 +13,10 @@ export default function Home() {
       {isLoggedIn ? (
         <HomePage setIsLoggedIn={setIsLoggedIn} />
       ) : (
-        <LandingPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+        <>
+          <LandingPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+          <Footer />
+        </>
       )}
     </div>
   );
