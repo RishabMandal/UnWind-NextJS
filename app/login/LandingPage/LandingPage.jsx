@@ -73,7 +73,7 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
                   type="text"
                   name="username"
                   id="form2Example11"
-                  className="form-control drop-shadow-md mx-auto text-2xl md:w-[30vw] p-3 rounded-lg border-2 hover:border-[#06D6A0] text-[#06D6A0] "
+                  className="form-control drop-shadow-md mx-auto text-2xl lg:w-[30vw] p-3 rounded-lg border-2 hover:border-[#06D6A0] text-[#06D6A0] "
                   placeholder="Username"
                   ref={usernameRef}
                   // onChange={(e) => {
@@ -90,7 +90,7 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
                   type="password"
                   name="password"
                   id="form2Example22"
-                  className="form-control drop-shadow-md mx-auto text-2xl md:w-[30vw] p-3 rounded-lg border-2 hover:border-[#06D6A0] text-[#06D6A0]"
+                  className="form-control drop-shadow-md mx-auto text-2xl lg:w-[30vw] p-3 rounded-lg border-2 hover:border-[#06D6A0] text-[#06D6A0]"
                   placeholder="Master Password"
                   ref={passwordRef}
                   onKeyDown={(e) => handleEnter(e)}
@@ -254,7 +254,7 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
       </div>
       {/* // FAQ */}
       <div
-        className={`${silkscreen.className} bg-[#06D6A0] text-7xl pt-10 md:pt-20 text-center px-10`}
+        className={`${silkscreen.className} bg-[#06D6A0] text-4xl md:text-7xl pt-10 md:pt-20 text-center px-10`}
       >
         Frequently Asked Questions
       </div>

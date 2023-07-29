@@ -82,15 +82,15 @@ const page = () => {
               />
             </div>
             <div className="bg-white"></div>
-            <div className="flex flex-wrap mx-5">
+            <div className="flex flex-wrap gap-6 mx-5">
               <div className="bg-white pt-1 pb-3 px-3 rounded-xl min-h-[247px] flex-1">
                 <div className="font-semibold text-3xl my-3">
                   Recommended activities
                 </div>
-                <div className="flex justify-between">
+                <div className="flex flex-col gap-3 lg:flex-row items-center lg:justify-between">
                   <Link
                     href="/components/breathe"
-                    className="w-[240px] h-[240px] mr-3 cursor-pointer"
+                    className="w-[240px] h-[240px] cursor-pointer"
                   >
                     <img
                       className="rounded-xl object-cover h-full"
@@ -100,7 +100,7 @@ const page = () => {
                   </Link>
                   <Link
                     href="/components/yoga"
-                    className="w-[240px] h-[240px] mr-3 cursor-pointer"
+                    className="w-[240px] h-[240px] cursor-pointer"
                   >
                     <img
                       className="rounded-xl"
@@ -110,7 +110,7 @@ const page = () => {
                   </Link>
                   <Link
                     href="/components/morningexercises"
-                    className="w-[240px] h-[240px] mr-3 cursor-pointer"
+                    className="w-[240px] h-[240px] cursor-pointer"
                   >
                     <img
                       className="rounded-xl w-[240px] h-[240px]"
@@ -132,7 +132,7 @@ const page = () => {
               </div>
               <Link
                 href="/components/therapist"
-                className="bg-white pt-1 pb-3 px-3 rounded-xl ml-3"
+                className="bg-white pt-1 pb-3 px-3 rounded-xl"
               >
                 <div className="font-semibold text-center text-3xl mt-3 mx-4">
                   Talk to an expert
@@ -145,7 +145,7 @@ const page = () => {
               </Link>
               <Link
                 href="/components/journal"
-                className="bg-white w-[300px] pt-1 pb-3 px-3 rounded-xl ml-3"
+                className="bg-white w-[300px] pt-1 pb-3 px-3 rounded-xl"
               >
                 <div className="font-semibold text-center text-3xl mt-3 mx-2">
                   Journal
