@@ -157,8 +157,8 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
       {/* LandingPage */}
       <div className="min-h-screen bg-[#F8FFE5] flex flex-col md:flex-row">
         <div className="w-screen p-5 md:p-20 min-h-screen md:w-[50vw] flex flex-col justify-center items-center">
-          <div className={`${silkscreen.className} text-8xl mb-4`}>UNWIND</div>
-          <div className="text-7xl mb-8 text-center font-semibold text-gray-900 font-Noto Serif">
+          <div className={`${silkscreen.className} text-5xl md:text-8xl mb-4`}>UNWIND</div>
+          <div className="text-4xl md:text-7xl mb-8 text-center font-semibold text-gray-900 font-Noto Serif">
             Improving Mental Health
           </div>
           <button
@@ -178,13 +178,13 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
         </div>
       </div>
       <div
-        className={`${silkscreen.className} bg-[#06D6A0] text-7xl pt-10 md:pt-20 text-center px-10`}
+        className={`${silkscreen.className} bg-[#06D6A0] text-4xl md:text-7xl pt-10 md:pt-20 text-center px-10`}
       >
         Explore Our Features
       </div>
       <div className="min-h-screen bg-[#06D6A0] flex flex-col md:flex-row">
         <div className="w-screen p-5 md:p-20 min-h-screen md:w-[50vw] flex flex-col justify-center items-center">
-          <div className={`${silkscreen.className} text-8xl mb-4`}>UNWIND</div>
+          <div className={`${silkscreen.className} text-5xl md:text-8xl mb-4`}>UNWIND</div>
           <div className="text-7xl mb-8 font-semibold text-gray-900 font-Noto Serif">
             Improving Mental Health
           </div>
@@ -258,7 +258,7 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
       >
         Frequently Asked Questions
       </div>
-      <div className="bg-[#06D6A0] flex flex-col md:flex-row">
+      <div className="bg-[#06D6A0] flex flex-col lg:flex-row">
         <motion.div
           initial={{ x: "-100%", opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -267,12 +267,12 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
             delay: 0.3,
             ease: "easeOut",
           }}
-          className="w-[screen] p-5 md:p-20 min-h-[90vh] md:w-[50vw] flex flex-col justify-center items-center"
+          className="w-screen p-5 md:p-20 min-h-[90vh] md:w-[50vw] flex flex-col justify-center items-center"
         >
           <div className="text-4xl font-bold">
             Why is mental health important?
           </div>
-          <div className="text-2xl mt-5 md:w-[600px]">
+          <div className="text-2xl mt-5 lg:max-w-[600px]">
             Mental health plays a crucial role in our overall well-being,
             helping us cope with stress, maintain healthy relationships, and
             live our best lives.
@@ -291,7 +291,7 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
           <div className="text-4xl font-bold">
             How can I improve my mental health?
           </div>
-          <div className="text-2xl mt-5 md:w-[600px]">
+          <div className="text-2xl mt-5 lg:max-w-[600px]">
             By practicing self-care, staying connected with others, engaging in
             physical activity, getting enough sleep, and seeking professional
             help when needed.
