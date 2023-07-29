@@ -65,34 +65,34 @@ const Caraousel = () => {
               <div className="font-serif text-gray-900 text-3xl font-medium mb-14">
                 {data[quesCount - 1]}
               </div>
-              <div className="text-white font-bold">
+              <div className="text-white font-bold flex flex-wrap gap-6 justify-center">
                 <button
                   onClick={(e) => handleClick(e)}
-                  className="bg-[#45bc37] hover:scale-125 text-3xl transition ease-in mx-3 py-4 px-7 rounded-lg"
+                  className="bg-[#45bc37] hover:scale-125 text-3xl transition ease-in py-4 px-7 rounded-lg"
                 >
                   1
                 </button>
                 <button
                   onClick={(e) => handleClick(e)}
-                  className="bg-[#ccde0e] hover:scale-125 text-3xl transition ease-in mx-3 py-4 px-7 rounded-lg"
+                  className="bg-[#ccde0e] hover:scale-125 text-3xl transition ease-in py-4 px-7 rounded-lg"
                 >
                   2
                 </button>
                 <button
                   onClick={(e) => handleClick(e)}
-                  className="bg-[#f7dd00] hover:scale-125 text-3xl transition ease-in mx-3 py-4 px-7 rounded-lg"
+                  className="bg-[#f7dd00] hover:scale-125 text-3xl transition ease-in py-4 px-7 rounded-lg"
                 >
                   3
                 </button>
                 <button
                   onClick={(e) => handleClick(e)}
-                  className="bg-[#f97402] hover:scale-125 text-3xl transition ease-in mx-3 py-4 px-7 rounded-lg"
+                  className="bg-[#f97402] hover:scale-125 text-3xl transition ease-in py-4 px-7 rounded-lg"
                 >
                   4
                 </button>
                 <button
                   onClick={(e) => handleClick(e)}
-                  className="bg-[#ea0b0b] hover:scale-125 text-3xl transition ease-in mx-3 py-4 px-7 rounded-lg"
+                  className="bg-[#ea0b0b] hover:scale-125 text-3xl transition ease-in py-4 px-7 rounded-lg"
                 >
                   5
                 </button>

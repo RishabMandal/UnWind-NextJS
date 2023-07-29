@@ -43,14 +43,14 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
     <div>
       {/* LoginPage */}
       <div className="min-h-screen bg-[#F8FFE5] flex flex-col md:flex-row">
-        <div className="w-screen p-5 md:p-20 min-h-screen md:w-[50vw] flex flex-col justify-center items-center">
+        <div className="w-screen hidden p-5 md:p-20 min-h-screen lg:w-[50vw] lg:flex flex-col justify-center items-center">
           <Image
             className="shadow-2xl object-cover object-center rounded-xl w-[30vw]"
             src={loginimage}
             alt=""
           />
         </div>
-        <div className="w-screen p-5 md:p-20 min-h-screen md:w-[50vw] flex flex-col justify-center items-center">
+        <div className="w-screen p-5 md:p-20 min-h-screen lg:w-[50vw] flex flex-col justify-center items-center">
           <div className="">
             <div className="text-center mx-auto">
               <Image
