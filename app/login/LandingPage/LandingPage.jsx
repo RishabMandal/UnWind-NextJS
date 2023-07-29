@@ -59,13 +59,13 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
                 alt=""
               />
               <h4
-                className={`mt-1 text-6xl font-bold mb-3 pb-1 ${silkscreen.className}`}
+                className={`mt-1 text-3xl lg:text-6xl font-bold mb-3 ${silkscreen.className}`}
               >
                 Welcome to Unwind
               </h4>
             </div>
             <form action="http://localhost:5000/login" method="post">
-              <p className="text-3xl mt-10 mb-3 text-center">
+              <p className="text-2xl lg:text-3xl mt-5 lg:mt-10 mb-3 text-center">
                 Please login to your account
               </p>
               <div className="form-outline my-8 mx-auto w-fit">
