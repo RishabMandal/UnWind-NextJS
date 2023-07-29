@@ -59,10 +59,10 @@ const Caraousel = () => {
               <div className="text-5xl font-serif font-medium py-3 mb-10">
                 Question {quesCount}/{data.length}
               </div>
-              <div className="font-serif text-gray-900 text-4xl font-medium mb-5">
+              <div className="font-serif text-gray-900 text-3xl lg:text-4xl font-medium mb-5">
                 Over last 2 weeks, how often have you been bothered by...
               </div>
-              <div className="font-serif text-gray-900 text-3xl font-medium mb-14">
+              <div className="font-serif text-gray-900 text-2xl lg:text-3xl font-medium mb-14">
                 {data[quesCount - 1]}
               </div>
               <div className="text-white font-bold flex flex-wrap gap-6 justify-center">
