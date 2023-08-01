@@ -6,7 +6,7 @@ const CircularProgress = ({
   percentage,
   color,
   minutes,
-  seconds
+  seconds,
 }) => {
   const [progress, setProgress] = useState(0);
   useEffect(() => {
@@ -30,7 +30,7 @@ const CircularProgress = ({
       />
       <circle
         fill="none"
-        stroke={color}
+        stroke="#06D6A0"
         cx={size / 2}
         cy={size / 2}
         r={radius}

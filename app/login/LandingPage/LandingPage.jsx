@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import loginimage from "../../assets/LoginPageImage.jpg";
 import logoimage from "../../assets/unwind-logo.png";
 import { Silkscreen } from "next/font/google";
+import { auth, provider } from "../../../firebase.js";
+import { signInWithPopup } from "firebase/auth";
 
 const silkscreen = Silkscreen({
   weight: "400",
@@ -17,6 +19,32 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
 
   // SignUp content
   const [logIn, setLogIn] = useState(true);
+
+  // User sign in
+  const [signin, setsignin] = useState(false);
+  //   const [alertstate, setalertstate] = useState(false);
+  const [useremail, setuseremail] = useState();
+  const [username, setusername] = useState();
+
+  function handlesignin() {
+    signInWithPopup(auth, provider).then((data) => {
+      // console.log(data);
+      setuseremail(data.user.email);
+      setusername(data.user.displayName);
+      localStorage.setItem("email", data.user.email);
+      localStorage.setItem("username", data.user.displayName);
+    });
+  }
+
+  useEffect(() => {
+    setuseremail(localStorage.getItem("email"));
+    setusername(localStorage.getItem("username"));
+    if (useremail) {
+      //   setsignin(true);
+      setIsLoggedIn(!isLoggedIn);
+      alert("You are already logged in");
+    }
+  });
 
   // Username
   const usernameRef = useRef();
@@ -73,7 +101,7 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
                   type="text"
                   name="username"
                   id="form2Example11"
-                  className="form-control drop-shadow-md mx-auto text-2xl lg:w-[30vw] p-3 rounded-lg border-2 hover:border-[#06D6A0] text-[#06D6A0] "
+                  className="form-control drop-shadow-md mx-auto text-2xl w-full lg:w-[30vw] p-3 rounded-lg border-2 hover:border-[#06D6A0] text-[#06D6A0] "
                   placeholder="Username"
                   ref={usernameRef}
                   // onChange={(e) => {
@@ -84,13 +112,12 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
                   }}
                 />
               </div>
-
               <div className="form-outline mb-8 mx-auto w-fit">
                 <input
                   type="password"
                   name="password"
                   id="form2Example22"
-                  className="form-control drop-shadow-md mx-auto text-2xl lg:w-[30vw] p-3 rounded-lg border-2 hover:border-[#06D6A0] text-[#06D6A0]"
+                  className="form-control drop-shadow-md mx-auto text-2xl w-full lg:w-[30vw] p-3 rounded-lg border-2 hover:border-[#06D6A0] text-[#06D6A0]"
                   placeholder="Master Password"
                   ref={passwordRef}
                   onKeyDown={(e) => handleEnter(e)}
@@ -111,9 +138,9 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
               )} */}
 
               {logIn ? (
-                <div className="text-center pt-1 my-5 pb-1">
+                <div className="text-center pt-1 my-5 pb-1 flex flex-row justify-center">
                   <div
-                    className="block cursor-pointer w-fit text-xl font-semibold drop-shadow-xl fa-lg hover:bg-purple-800 transition ease-in bg-[#06D6A0] px-4 py-2 rounded-lg text-white mx-auto mb-3"
+                    className="cursor-pointer w-fit text-xl font-semibold drop-shadow-xl fa-lg hover:bg-green-800 transition ease-in bg-[#06D6A0] px-4 py-2 rounded-lg text-white mx-auto mb-3"
                     // type="submit"
                     onClick={() => {
                       setIsLoggedIn(!isLoggedIn);
@@ -121,11 +148,17 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
                   >
                     Log In
                   </div>
+                  <div
+                    onClick={handlesignin}
+                    className="cursor-pointer w-fit text-xl font-semibold drop-shadow-xl fa-lg hover:bg-green-800 transition ease-in bg-[#06D6A0] px-4 py-2 rounded-lg text-white mb-3"
+                  >
+                    Sign in with Google
+                  </div>
                 </div>
               ) : (
                 <div className="text-center pt-1 my-5 pb-1">
                   <button
-                    className="block text-xl font-semibold drop-shadow-xl fa-lg hover:bg-purple-800 transition ease-in bg-[#06D6A0] px-4 py-2 rounded-lg text-white mx-auto mb-3"
+                    className="block text-xl font-semibold drop-shadow-xl fa-lg hover:bg-green-800 transition ease-in bg-[#06D6A0] px-4 py-2 rounded-lg text-white mb-3"
                     type="button"
                     onClick={() => {}}
                   >
@@ -157,7 +190,9 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
       {/* LandingPage */}
       <div className="min-h-screen bg-[#F8FFE5] flex flex-col md:flex-row">
         <div className="w-screen p-5 md:p-20 min-h-screen md:w-[50vw] flex flex-col justify-center items-center">
-          <div className={`${silkscreen.className} text-5xl md:text-8xl mb-4`}>UNWIND</div>
+          <div className={`${silkscreen.className} text-5xl md:text-8xl mb-4`}>
+            UNWIND
+          </div>
           <div className="text-4xl md:text-7xl mb-8 text-center font-semibold text-gray-900 font-Noto Serif">
             Improving Mental Health
           </div>
@@ -184,7 +219,9 @@ const LandingPage = ({ isLoggedIn, setIsLoggedIn }) => {
       </div>
       <div className="min-h-screen bg-[#06D6A0] flex flex-col md:flex-row">
         <div className="w-screen p-5 md:p-20 min-h-screen md:w-[50vw] flex flex-col justify-center items-center">
-          <div className={`${silkscreen.className} text-5xl md:text-8xl mb-4`}>UNWIND</div>
+          <div className={`${silkscreen.className} text-5xl md:text-8xl mb-4`}>
+            UNWIND
+          </div>
           <div className="text-7xl mb-8 font-semibold text-gray-900 font-Noto Serif">
             Improving Mental Health
           </div>

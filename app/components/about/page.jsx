@@ -11,8 +11,8 @@ const About = () => {
     <>
       <div>
         <section className="text-gray-600 bg-[#F8FFE5] body-font">
-          <div className="h-[100vh]">
-            <div className=" bg-[#06D6A0]">
+          <div className=" bg-[#06D6A0]">
+            <div className="h-screen">
               <div className=" container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                   <img
@@ -26,7 +26,7 @@ const About = () => {
                     About Unwind
                     <br className="hidden lg:inline-block" />
                   </h1>
-                  <p className="mb-8 leading-relaxed">
+                  <p className="mb-8 leading-relaxed text-3xl">
                     Unwind was started with one mission:
                     <b> to improve the health and happiness of the world.</b>
                   </p>
@@ -34,15 +34,15 @@ const About = () => {
               </div>
             </div>
           </div>
-          <ul className="flex h-screen">
+          <ul className="flex h-screen items-center">
             <li className="mx-5 min-w-[400px] hover:scale-110 transition ease-in">
               <div className=" rounded-xl py-3 px-7">
                 <img
                   src="https://img.freepik.com/free-vector/group-young-people-posing-photo_52683-18823.jpg?w=740&t=st=1674102973~exp=1674103573~hmac=18cf248395ba675c398b7a37e0d87fc99f6da7dc146b82b8029db576da130c6ds"
                   alt=""
-                  className="mx-auto h-[40vh] object-contain"
+                  className="mx-auto h-[40vh] object-contain rounded-xl"
                 />
-                <div className="text-[#06D6A0] text-center font-bold text-2xl mb-3">
+                <div className="text-[#06D6A0] text-center font-bold  text-5xl mb-3">
                   Who we are
                 </div>
                 <div>
@@ -57,9 +57,9 @@ const About = () => {
                 <img
                   src="https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?w=1060&t=st=1674102558~exp=1674103158~hmac=df8cf98b1b596b11b2e56dcbf7a362cd65c1bb7b42b391f04b9ab866b92a2498"
                   alt=""
-                  className="mx-auto h-[40vh] object-contain"
+                  className="mx-auto h-[40vh] object-contain rounded-xl"
                 />
-                <div className="text-[#06D6A0] text-center font-bold text-2xl mb-3">
+                <div className="text-[#06D6A0] text-center font-bold  text-5xl mb-3">
                   What we do
                 </div>
                 <div>
@@ -74,9 +74,9 @@ const About = () => {
                 <img
                   src="https://previews.123rf.com/images/tynyuk/tynyuk1902/tynyuk190200008/125007787-meditating-man-over-isolated-background-keep-calm-vector-illustration-in-cartoon-style.jpg"
                   alt=""
-                  className="mx-auto h-[40vh] object-contain"
+                  className="mx-auto h-[40vh] object-contain rounded-xl"
                 />
-                <div className="text-[#06D6A0] text-center font-bold text-2xl mb-3">
+                <div className="text-[#06D6A0] text-center font-bold  text-5xl mb-3">
                   Why we do it
                 </div>
                 <div>
@@ -87,47 +87,35 @@ const About = () => {
               </div>
             </li>
           </ul>
-          <ul className="flex mx-10">
+          <ul className="flex flex-col lg:flex-row mx-10 h-screen">
             <motion.li
               initial={{ x: "-100%", opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              //   exit={{
-              //     x: "-100%",
-              //     opacity: 0,
-              //     transition: { duration: 0, delay: 0 },
-              //   }}
               transition={{
                 duration: 0.5,
                 delay: 0.3,
                 ease: "easeOut",
               }}
             >
-              <div className="mx-10 rounded-xl flex items-center justify-center title-font text-8xl mb-4 font-medium text-black text-center w-[40vw] h-[70vh] bg-purple-200">
-                <div className="">
-                  <Image src={aboutImg} alt="" />
-                </div>
+              <div className="mx-10 rounded-xl flex items-center justify-center bg-purple-200">
+                <Image className="rounded-xl" src={aboutImg} alt="" />
               </div>
             </motion.li>
             <motion.li
               initial={{ x: "100%", opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              //   exit={{
-              //     x: "-100%",
-              //     opacity: 0,
-              //     transition: { duration: 0, delay: 0 },
-              //   }}
               transition={{
                 duration: 0.5,
                 delay: 0.3,
                 ease: "easeOut",
               }}
             >
-              <div className="h-screen">
-                <div className="mx-10 mt-10 text-[#06D6A0] text-center font-bold text-2xl mb-3 w-[40vw]">
+              <div className="h-screen flex flex-col justify-center">
+                <div className="mx-10 text-[#06D6A0] text-center font-bold text-5xl mb-3 lg:w-[40vw]">
                   Unwind: Helping people with mental health care around the
                   world
                 </div>
-                <div className="mx-10 text-center text-xl mb-3 w-[40vw] h-[70vh]">
+                <div className="mx-10 text-center text-3xl my-3 lg:w-[40vw]">
                   Unwind is part of Unwind Health, the world’s most accessible,
                   comprehensive provider of mental health and well-being care.
                   Unwind Health also consists of Unwind for Work and Ginger, who
@@ -145,7 +133,7 @@ const About = () => {
               <div className="mx-20 text-center text-[#06D6A0] text-6xl mb-3 w-[40vw]">
                 <b>Try our Unwind App for free today</b>
               </div>
-              <div className="mx-20 text-center text-2xl mb-3 w-[40vw]">
+              <div className="mx-20 text-center  text-5xl mb-3 w-[40vw]">
                 Find more joy, less stress, and the best sleep ever with Unwind.
                 Try it for free today.
               </div>
